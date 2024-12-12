@@ -10,7 +10,7 @@ When online shopping, the products are countless, which can confuse the consumer
 - Using a stratified 50/50 train-test split on the dataset, we then applied singular value decomposition (SVD) to our utility matrix and tested singular values of 150, 200, 250, 300, 350, 400, 410, and 425
 - 300 singular values yielded the most matches of 36,527
   
-![alt text](https://i.gyazo.com/a2111cdb5be45db4e5f87a8ca1cb536b.png)
+![alt_text](https://i.gyazo.com/311089b21c447695dc7957518c1c2ac2.png)
 
 - The corresponding root-mean squared error (RMSE) between the original utility matrix and its reduced version is about 0.05572
 
