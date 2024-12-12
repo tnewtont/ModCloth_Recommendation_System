@@ -16,3 +16,19 @@ When online shopping, the products are countless, which can confuse the consumer
 
 ![alt text](https://i.gyazo.com/a05d24d1060f1803eadc6d57c44e402a.png)
 
+## Data Notes
+- Preprocessing and wrangling are done in the 'rsp_data_wrangling.ipynb' notebook
+- Utilized four features including:
+  - item_id
+  - user_id
+  - rating
+  - category
+- Imputed one missing entry in user_id with 'Unknown'
+- Data was filtered to include only products that contained 24 or more reviews
+- A separate dataframe that contains the most popular items through basic aggregation is stored as 'pop_items.csv'
+
+## Model Notes
+
+## Future Directions
+- Apply sentimental analysis to the item descriptions to fully uncover the bias in the data and observe its potential consequences towards the recommendation system
+- Increase the threshold for filtering the data by including items that contain 30 or more reviewes
