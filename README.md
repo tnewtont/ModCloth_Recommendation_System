@@ -6,9 +6,8 @@
 When online shopping, the products are countless, which can confuse the consumer. Thankfully, recommendation systems can help streamline the consumer's shopping experience. This project aims to build a recommendation system for products sold from ModCloth, a brand that specializes in vintage-inspired women's apparel, particularly with dresses. 
 
 ## Results
-- A simple metric used to determine how well our k-nearest neighbors (using k = 10 and L2-norm) model performed was checking how many matches it obtained compared to the actual dataset
-- Using a stratified 50/50 train-test split on the dataset, we then applied singular value decomposition (SVD) to our utility matrix and tested singular values of 150, 200, 250, 300, 350, 400, 410, and 425
-- 300 singular values yielded the most matches of 36,527
+- A simple metric used to determine how well our k-nearest neighbors model performed was checking how many matches it obtained compared to the actual dataset
+- Using 300 singular values on the utility matrix yielded the most matches
   
 ![alt_text](https://i.gyazo.com/311089b21c447695dc7957518c1c2ac2.png)
 
@@ -28,7 +27,15 @@ When online shopping, the products are countless, which can confuse the consumer
 - A separate dataframe that contains the most popular items through basic aggregation is stored as 'pop_items.csv'
 
 ## Model Notes
-
+- The recommendation system is split into two cases:
+  - A user's average rating is 4 or above
+  - Otherwise, a user's average rating is below 4
+- The k-nearest neighbors model used k = 10 and L2-norm
+  - Using L1-norm led to significantly less matches
+- Since the ratings are rank-based, Spearman's correlation was utilized when calculating 
+- Implemented a stratified 50/50 train-test split on the dataset
+- Applied singular value decomposition (SVD) to the utility matrix
+  - Tested singular values of 150, 200, 250, 300, 350, 400, 410, and 425
 ## Future Directions
 - Apply sentimental analysis to the item descriptions to fully uncover the bias in the data and observe its potential consequences towards the recommendation system
 - Increase the threshold for filtering the data by including items that contain 30 or more reviewes
