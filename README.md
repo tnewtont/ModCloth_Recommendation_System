@@ -32,7 +32,7 @@ When online shopping, the products are countless, which can confuse the consumer
   - Otherwise, a user's average rating is below 4
 - The k-nearest neighbors model used k = 10 and L2-norm
   - Using L1-norm led to significantly less matches
-- Since the ratings are rank-based, Spearman's correlation was utilized when calculating 
+- Since the ratings are rank-based, Spearman's correlation was utilized
 - Implemented a stratified 50/50 train-test split on the dataset
 - Applied singular value decomposition (SVD) to the utility matrix
   - Tested singular values of 150, 200, 250, 300, 350, 400, 410, and 425
