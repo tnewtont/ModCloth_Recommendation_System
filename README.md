@@ -24,6 +24,7 @@ When online shopping, the products are countless, which can confuse the consumer
   - category
 - Imputed one missing entry in user_id with 'Unknown'
 - Data was filtered to include only products that contained 24 or more reviews
+  - This was then subsequently stored as its own dataframe 'df_modcloth_filtered.csv'
 - A separate dataframe that contains the most popular items through basic aggregation is stored as 'pop_items.csv'
 
 ## Model Notes
