@@ -36,6 +36,7 @@ When online shopping, the products are countless, which can confuse the consumer
 - Implemented a stratified 50/50 train-test split on the dataset
 - Applied singular value decomposition (SVD) to the utility matrix
   - Tested singular values of 150, 200, 250, 300, 350, 400, 410, and 425
+- Model was trained on Google Colab's L4 GPU
 ## Future Directions
 - Apply sentimental analysis to the item descriptions to fully uncover the bias in the data and observe its potential consequences towards the recommendation system
 - Increase the threshold for filtering the data by including items that contain 30 or more reviewes
