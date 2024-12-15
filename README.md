@@ -41,5 +41,5 @@ When online shopping, the products are countless, which can confuse the consumer
 ## Future Directions
 - Apply sentimental analysis to the item descriptions to fully uncover the bias in the data and observe its potential consequences towards the recommendation system
   - This is especially evident in the overall skewness of the ratings, generally favoring towards items and a given user's average rating of 4 or higher
-- Increase the threshold for filtering the data by including items that contain 30 or more reviewes
+- Increase the threshold for filtering the data by including items that contain 30 or more reviews
   - This is to further reinforce the notion of a "good" item
